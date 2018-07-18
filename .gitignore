@@ -3,5 +3,5 @@ client/dist
 server/lib
 **/*/ENV_VAR
 ENV_VAR
-**/env/development.js
+server/src/config/env/development.js
 development.js

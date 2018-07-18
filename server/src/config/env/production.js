@@ -3,7 +3,14 @@
 // Also set the NODE_ENV environment property to "production" (no quotes) in AWS, Heroku, etc.
 let cfg = {
     MAILGUN_API_KEY: process.env.MAILGUN_API_KEY,
-    STRIPE_SK: process.env.STRIPE_SK
+    STRIPE_SK: process.env.STRIPE_SK,
+    db: {
+        connectionLimit: 10,
+        host: 'localhost',
+        user: 'blogapp',
+        password: 'blahblah',
+        database: 'blog',
+    },
 };
 
 export { cfg };

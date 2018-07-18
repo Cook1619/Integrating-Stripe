@@ -1,12 +1,7 @@
 import mysql from 'mysql';
+import { config } from '.';
 
-let pool = mysql.createPool({
-    connectionLimit: 10,
-    host: 'localhost',
-    user: 'blogapp',
-    password: 'blahblah',
-    database: 'blog'
-});
+let pool = mysql.createPool(config.db);
 
 async function executeQuery(sql, args = []) {
     let connection = await getConnection();
