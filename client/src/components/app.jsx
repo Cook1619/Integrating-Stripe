@@ -26,6 +26,7 @@ class Navigation extends Component {
                         <Route exact path="/" component={HelloWorld} />
                         <Route path="/login" component={Login} />
                         <Route path="/logout" component={Logout} />
+                        <Route path="/donate" component={Donate} />
                         <Route path="/blogs" component={BlogList} />
                         <PrivateRoute path="/goodbye" component={GoodbyeWorld} />
                         <PrivateRoute path="/admin" component={AdminHome} />
