@@ -5,7 +5,7 @@ const stripe = stripeLoader(config.STRIPE_SK); // define secret key in config fo
 function charge(token, amt) {
     // returning a promise, so when we call .charge elsewhere, we will use await
     return stripe.charges.create({
-        amount: amt * 100, //amount in cents
+        amount: amt * 1000, //amount in cents
         currency: 'usd',
         source: token,
         description: 'Statement description'
