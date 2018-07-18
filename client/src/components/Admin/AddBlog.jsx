@@ -36,21 +36,23 @@ class AddBlog extends Component {
     render() {
         return (
             <Fragment>
-                <input
-                    type="text"
-                    placeholder="Write a Blog Title"
-                    onChange={this.handleBlogTitle}
-                />
-                <input
-                    type="text"
-                    placeholder="Enter in Blog Content here"
-                    onChange={this.handleBlogContent}
-                />
-                <Link 
-                className="btn btn-info" 
-                to={`/admin`} onClick={this.addBlog.bind(this)}>
-                Add Blog
+                <form>
+                    <input
+                        type="text"
+                        placeholder="Write a Blog Title"
+                        onChange={this.handleBlogTitle}
+                    />
+                    <input
+                        type="text"
+                        placeholder="Enter in Blog Content here"
+                        onChange={this.handleBlogContent}
+                    />
+                    <Link
+                        className="btn btn-info"
+                        to={`/admin`} onClick={this.addBlog.bind(this)}>
+                        Add Blog
                 </Link>
+                </form>
 
             </Fragment>
         )

@@ -1,7 +1,7 @@
 import mysql from 'mysql';
-import { config } from '.';
+import { config, db } from '.';
 
-let pool = mysql.createPool(config.db);
+let pool = mysql.createPool(config.db, db);
 
 async function executeQuery(sql, args = []) {
     let connection = await getConnection();

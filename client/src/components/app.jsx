@@ -9,6 +9,7 @@ import AuthButton from './auth/authButton';
 import BlogList from './BlogList';
 import SingleBlog from './Admin/SingleBlog';
 import AdminHome from './Admin/AdminHome';
+import Donate from './donate';
 
 class Navigation extends Component {
 

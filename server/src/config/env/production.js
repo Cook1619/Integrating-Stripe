@@ -13,4 +13,4 @@ let cfg = {
     },
 };
 
-export { cfg };
+export default{ cfg };

@@ -7,5 +7,5 @@ if (process.env.NODE_ENV === 'production') {
 
     config = require('./env/development').cfg;
 }
-
+console.log(config);
 export { config };
